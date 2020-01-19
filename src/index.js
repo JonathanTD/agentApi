@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-// const db = require('../database/dbConfig');
 const agentRoute = require('./api/routers/agent.router');
 // const customerRoute = require('./api/routers/customer.router');
 
