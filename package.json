@@ -1,0 +1,25 @@
+{
+  "name": "customerapi",
+  "version": "1.0.0",
+  "description": "crud api for agents",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node ./src/index.js",
+    "start:dev": "nodemon ./src/index.js",
+    "drop:db": "node ./database/utils/dropDb.js",
+    "create:db": "node ./database/utils/createDb.js",
+    "reset:db": "npm run drop:db && npm run create:db"
+  },
+  "author": "Jonathan Tiede",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.9",
+    "node-mongo-seeds": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
