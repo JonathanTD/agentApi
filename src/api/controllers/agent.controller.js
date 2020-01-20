@@ -1,4 +1,3 @@
-// const Agent = require('../../../database/models/Agent');
 const Agent = require('../../../database/models/Agent');
 
 // const Customer = require('../../../database/models/Customer')
