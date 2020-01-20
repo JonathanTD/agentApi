@@ -8,9 +8,10 @@
 3. CD into your working directory and install dependencies via *npm install*
 
 4.  create and seed your database
-        $ npm run reset:db
+        $ npm run create:db
         --you can drop db at anytime using $ npm run drop:db
         --you can populate db with json files in seeders dir anytime using $ npm run create:db
+        --you can drop db and re-create using $ npm run reset:db
 
 5. start server via $ npm start
 
