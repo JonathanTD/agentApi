@@ -12,7 +12,9 @@ app.use('/agents', agentRoute)
 // app.use('/customer', customerRoute)
 
 mongoose
-    .connect('mongodb://localhost/agentapi', { useNewUrlParser: true, useUnifiedTopology: true})
+    .connect('mongodb://localhost/agentapi', { useNewUrlParser: true, useUnifiedTopology: true}, (err) => {
+        if(err) console.log(err)
+    })
     .then(() => console.log('DB connected'))
     .catch(err => console.log(err))
 
